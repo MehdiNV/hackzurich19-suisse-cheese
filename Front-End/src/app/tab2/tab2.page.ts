@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-tab2',
@@ -7,21 +8,17 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
 
   public grabSearch(){
-  	let currency = ('NaN' || this.currencySelection);
+	let currency = ('NaN' || this.currencySelection);
   	let country = ('NaN' || this.countrySelection);
   	let sector = ('NaN' || this.sectorSelection);
   	let topic = ('NaN' || this.topicSelection);
 
-
-  	this.http.get('127.0.0.1:8000/articles').map(res => res.json()).subscribe(data => {
+  	this.http.get('http://127.0.0.1:8000/articles').subscribe(data => {
     	console.log(data);
-    	
-    }
-
-
-  }
+		})
+	}
 }
