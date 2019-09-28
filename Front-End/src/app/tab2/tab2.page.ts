@@ -12,10 +12,7 @@ export class Tab2Page {
 
 
   public grabSearch(){
-	let currency = ('NaN' || this.currencySelection);
-  	let country = ('NaN' || this.countrySelection);
-  	let sector = ('NaN' || this.sectorSelection);
-  	let topic = ('NaN' || this.topicSelection);
+	
 
   	this.http.get('http://127.0.0.1:8000/articles').subscribe(data => {
     	console.log(data);
