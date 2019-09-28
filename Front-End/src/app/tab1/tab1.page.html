@@ -22,8 +22,30 @@
 
    <ion-item-divider></ion-item-divider>
 
-  
-
+   <ion-text color="dark">
+    <h1 class="ion-text-center">The Articles related to the hottest topics from last 7 days</h1>
+  </ion-text>
+ 
+  <ion-list>
+    <ion-item *ngFor="let articleCard of dataList">
+      <ion-card (click)="openArticle()" routerLink="/article" routerDirection="root">
+        <ion-card-header>
+          <ion-card-subtitle>{{articleCard.subtitle}}</ion-card-subtitle>
+          <ion-card-title>{{articleCard.title}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{articleCard.content}}
+        </ion-card-content>
+      </ion-card>
+    </ion-item> 
+  </ion-list>
+ 
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more articles...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 
 
 </ion-content>
