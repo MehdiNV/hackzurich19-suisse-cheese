@@ -1,0 +1,68 @@
+{
+	"id": "da441f18-a082-4813-b442-94f55a818f3b",
+	"name": "portfolio balance",
+	"allTests": [],
+	"timestamp": "2019-09-28T12:53:05.930Z",
+	"collection_id": "a4789966-6530-41e2-87f3-484eb18cdfd9",
+	"folder_id": "f890f617-76ae-4a0b-8364-cdc245b4c5a7",
+	"target_type": "folder",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "a4789966-6530-41e2-87f3-484eb18cdfd9",
+		"name": "Portfolio",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [],
+		"folders_order": [
+			"792af1c1-b8b9-4819-b8ec-069f04baf821",
+			"a08fd9b2-9488-4a6c-b0c3-c2b147b97d1a",
+			"18a572d4-30b0-4e28-8865-2f8cd1933776",
+			"4cf3d1bd-df80-4159-815f-a5ef84d4e0f0",
+			"f890f617-76ae-4a0b-8364-cdc245b4c5a7"
+		],
+		"owner": "0",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": {
+		"id": "f890f617-76ae-4a0b-8364-cdc245b4c5a7",
+		"name": "portfolio balance",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"collection": "a4789966-6530-41e2-87f3-484eb18cdfd9",
+		"folder": null,
+		"order": [
+			"96a06f7a-dc48-4e2b-bfa8-5475b0a1bde7",
+			"16ec4094-4af8-4c04-8996-6f76176067df"
+		],
+		"folders_order": [],
+		"type": "folder",
+		"depth": 1
+	},
+	"environment": null,
+	"globals": null,
+	"results": [],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 0,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Cash balance Copy",
+			"id": "96a06f7a-dc48-4e2b-bfa8-5475b0a1bde7",
+			"url": "{{url}}/accounts/2/balancecash",
+			"time": "2019-09-28T12:53:05.930Z",
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}
