@@ -7,5 +7,93 @@
 </ion-header>
 
 <ion-content>
+
+	<ion-text color="dark">
+      <h1 class="ion-text-center">Narrow your search for the articles through these filters</h1>
+    </ion-text>
+
+    <ion-item-divider></ion-item-divider>
+
+
+
+	<ion-grid class="ion-text-center">
+
+
+	  <ion-row> <!-- First Row -->
+	    <ion-col> <!-- First Column -->
+
+	      <ion-item>
+	          <ion-label>Filter by Country</ion-label>
+	          <ion-select [(ngModel)]="countrySelection" value="countrySelection" interface="action-sheet">
+	            <ion-select-option value="Afghanisatan">Afghanisatan</ion-select-option>
+	            <ion-select-option value="Belgium">Belgium</ion-select-option>
+	            <ion-select-option value="Denmark">Denmark</ion-select-option>
+	            <ion-select-option value="Zurich">Zurich</ion-select-option>
+	          </ion-select>
+          </ion-item>
+
+	    </ion-col>
+
+	    <ion-col> <!-- Second Column -->
+
+	      <ion-item>
+	          <ion-label>Filter by Currency</ion-label>
+	          <ion-select [(ngModel)]="currencySelection" value="currencySelection" interface="action-sheet">
+	            <ion-select-option value="gbp">Pound Sterling</ion-select-option>
+	            <ion-select-option value="euro">Euro</ion-select-option>
+	            <ion-select-option value="chf">Swiss Francs</ion-select-option>
+	            <ion-select-option value="usd">US Dollars</ion-select-option>
+	          </ion-select>
+          </ion-item>
+
+	    </ion-col>
+
+	    
+
+	  </ion-row> <!-- End of 1st Row -->
+
+	  <ion-row> <!-- 2nd Row in the Site -->
+
+	  	<ion-col> <!-- Third Column -->
+
+	      <ion-item>
+	          <ion-label>Filter by Sector</ion-label>
+	          <ion-select [(ngModel)]="sectorSelection" value="sectorSelection" interface="action-sheet">
+	            <ion-select-option value="elec">Electricity</ion-select-option>
+	            <ion-select-option value="tech">Technology</ion-select-option>
+	            <ion-select-option value="bank">Banking</ion-select-option>
+	            <ion-select-option value="health">Health</ion-select-option>
+	          </ion-select>
+          </ion-item>
+
+	    </ion-col>
+
+	    <ion-col> <!-- Fourth Column -->
+	      <ion-item>
+	          <ion-label>Filter by Topic</ion-label>
+	          <ion-select [(ngModel)]="topicSelection" value="topicSelection" interface="action-sheet">
+	            <ion-select-option value="war">Politics</ion-select-option>
+	            <ion-select-option value="science">Science</ion-select-option>
+	            <ion-select-option value="world">World</ion-select-option>
+	          </ion-select>
+          </ion-item>
+	    </ion-col>
+
+	  </ion-row> <!-- End of 2nd Row -->
+
+
+	</ion-grid>
+
+
+
+	<div class="ion-text-center bottomButton" (click)="grabSearch()">
+		<ion-button>
+			<ion-icon slot="start" name="search"></ion-icon>
+			Search using these filters
+		</ion-button>
+	</div>
+
+
+
 	
 </ion-content>
