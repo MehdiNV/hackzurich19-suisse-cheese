@@ -5,6 +5,4 @@ from .models import Articles
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Articles
-        fields = ('title', 'timestamp')
-        # fields = ('title')
-        # fields = '__all__'
+        fields = '__all__'
