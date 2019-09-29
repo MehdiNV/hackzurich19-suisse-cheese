@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab5.page.scss'],
 })
 export class Tab5Page implements OnInit {
+  usernameInput: string = "";
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public grabUserInfo(){
+    var usernameVal = this.usernameInput;
+  }
+
+  public clickToggle(){
+    document.body.classList.toggle('--ion-color-dark')
   }
 
 }

@@ -1,0 +1,27 @@
+.swiper-slide {
+      display: block;
+}
+
+ion-slide > h2 {
+  margin-top: 2.8rem;
+}
+
+ion-slide > img {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 36px 0;
+}
+
+.fixedInputPositioning {
+    position: fixed;
+    left: 0;
+    bottom: 30%;
+    right: 0;
+}
+
+.minimiseSize{
+	width: 11%;
+	height: 11%;
+  padding-top: 2.5%;
+	
+}
