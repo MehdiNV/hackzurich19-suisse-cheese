@@ -22,7 +22,7 @@
     <ion-item *ngFor="let articleCard of dataList">
       <ion-card >
         <ion-card-header>
-          <ion-card-subtitle>{{articleCard.journal}}</ion-card-subtitle>
+          <ion-card-subtitle>{{articleCard.journal}} - {{ articleCard.timestamp | date}}</ion-card-subtitle>
           <ion-card-title>{{articleCard.title}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
