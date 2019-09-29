@@ -18,7 +18,8 @@ export class Tab5Page implements OnInit {
   }
 
   public clickToggle(){
-    document.body.classList.toggle('--ion-color-dark')
+    document.body.classList.toggle('--ion-color-dark');
+    document.body.classList.toggle('dark');
   }
 
 }
